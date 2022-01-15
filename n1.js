@@ -1,3 +1,5 @@
+
+
 // Screen dimensions
 const WIDTH = 1024
 const HEIGHT = 768
@@ -9,7 +11,7 @@ panel1.height = HEIGHT;
 panel1.width = WIDTH;
 document.body.appendChild(panel1);
 
-// Create the back buffer and context
+// Create the back buffer panel2 and context
 var panel2 = document.createElement('canvas');
 var ctx2 = panel1.getContext('2d');
 panel2.height = HEIGHT;
@@ -68,22 +70,6 @@ function drawT(ctx, xx, yy) {
     ctx.fillText("n: " + nloop + " t: " + _ts() + " s ", xx, yy);
 }
 
-function drawMandelbrotSet(ctx) {
-    ctx.fillStyle = "white";
-    for (var yy = TOP; yy < HEIGHT - TOP; yy++) {
-        for (var xx = LEFT; xx < WIDTH - LEFT; xx++) {
-            convergency = 100;
-            var s = 150;
-
-            //ctx.fillStyle = "blue";
-            //ctx.ctx.fillRect(xx, yy, 1, 1); // Draw a colorful pixel
-
-            //ctx.fillStyle = "rgb(100, 10, " + convergency + ")";
-            ctx.fillStyle = "hsl(" + h + "," + s + "%," + (convergency) + "%)";
-            ctx.fillRect(xx, yy, 1, 1); // Draw a colorful pixel
-        }
-    }
-}
 
 /// MOUSE FUNCTIONS
 

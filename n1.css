@@ -1,7 +1,23 @@
 
 
 
-
+html {
+    color: white;
+    /*background: url("") no-repeat center center fixed;*/
+    background-size: cover;
+    width: 78%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding-top: auto;
+    padding-right: auto;
+    padding-bottom: auto;
+    padding-left: auto;
+    text-align: center;
+    font-family: Verdana, Arial;
+    font-size: medium;
+}
 
 canvas {
     background: green;
